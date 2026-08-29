@@ -1,0 +1,32 @@
+[build-system]
+# Указываем, какой инструмент использовать для сборки
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "GrokML" # Должно быть уникальным на PyPI
+version = "0.1.0"
+authors = [
+  { name="Малежский Дима Юрьевич", email="ffalcrum@gmail.com" },
+]
+description = "Краткое описание вашего пакета"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT License"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+# Зависимости вашего пакета
+dependencies = [
+    "requests>=2.25.1",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Falck2881/GrokML"
+"Bug Tracker" = "https://github.com/Falck2881/GrokML/issues"
+
+# Указываем, что код лежит в папке src
+[tool.setuptools.packages.find]
+where = ["src"]
