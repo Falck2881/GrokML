@@ -1,6 +1,6 @@
 import numpy as np
-from src.methods import IGradientDescent
-from src.models import DirectModel
+from src.grok_ml.methods import IGradientDescent
+from src.grok_ml.models import DirectModel
 
 class Line:
     def __init__(self, features: np.ndarray, labels: np.ndarray, descent: IGradientDescent):

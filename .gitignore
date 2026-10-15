@@ -3,6 +3,7 @@
 # ==========================================
 # Результаты работы python -m build
 dist/
+build_env/
 build/
 *.egg-info/
 *.dist-info/
